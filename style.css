@@ -452,3 +452,68 @@ body {
     font-size: 1rem;
   }
 }
+
+
+.header {
+  background: linear-gradient(135deg, #00b4db, #0083b0, #0ea5e9, #06b6d4, #0284c7);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  filter: blur(80px);
+  animation: float 12s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(100px, 50px); }
+}
+
+/*スクロールアニメーション*/
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 交互に方向を変える演出（左右スライド） */
+.scroll-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-left.visible,
+.scroll-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

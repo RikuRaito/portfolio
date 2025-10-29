@@ -6,6 +6,7 @@
     <title>斉藤吏功 - ポートフォリオ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
     <!-- ヘッダー -->
     <header class="header">
@@ -13,9 +14,9 @@
         <div class="profile-section">
           
           <div class="profile-text">
-            <h1 class="name">斉藤　吏功</h1>
-            <p class="title">フルスタックエンジニア</p>
-            <p class="description">
+            <h1 class="name fade-in-up delay-1">斉藤　吏功</h1>
+            <p class="title fade-in-up delay-2">フルスタックエンジニア</p>
+            <p class="description fade-in-up delay-3">
               Webアプリケーション開発とネイティブアプリ開発を中心に、フロントエンドからバックエンドまで幅広く対応できます。<br>
               ユーザー体験を第一に考えた、美しく実用的なプロダクトを作ることが得意です。
             </p>
@@ -189,6 +190,25 @@
         <p>&copy; 2025 斉藤吏功 All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15 });
 
+      // 各セクションにフェードアップを適用
+      document.querySelectorAll('.section, .project-card, .skill-category').forEach((el, i) => {
+        if (el.classList.contains('project-card')) {
+          // プロジェクトカードは交互にスライド方向を変える
+          el.classList.add(i % 2 === 0 ? 'scroll-left' : 'scroll-right');
+        } else {
+          el.classList.add('scroll-fade');
+        }
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>
