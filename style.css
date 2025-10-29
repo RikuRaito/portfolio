@@ -1,0 +1,454 @@
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 基本スタイル */
+:root {
+  --primary-color: #0ea5e9;
+  --primary-dark: #0284c7;
+  --accent-color: #06b6d4;
+  --text-color: #0f172a;
+  --text-light: #64748b;
+  --bg-color: #ffffff;
+  --bg-alt: #f8fafc;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --gradient: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* コンテナ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ヘッダー */
+.header {
+  background: var(--gradient);
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image-wrapper {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  max-width: 650px;
+}
+
+/* セクション */
+.section {
+  padding: 100px 0;
+}
+
+.section-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 64px;
+  color: var(--text-color);
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+/* スキル */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.skill-category:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.category-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  letter-spacing: 0.02em;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: var(--bg-alt);
+  color: var(--text-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 2px solid var(--border-color);
+}
+
+.skill-tag:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* プロジェクト */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.project-header {
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.project-period {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  background-color: var(--bg-alt);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--bg-alt);
+  color: var(--primary-color);
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* 連絡先 */
+.contact-section {
+  background: var(--bg-color);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 28px;
+  background: white;
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--border-color);
+}
+
+.contact-link:hover {
+  background: var(--gradient);
+  color: white;
+  transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* フッター */
+.footer {
+  background-color: var(--text-color);
+  color: white;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 968px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .description {
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header {
+    padding: 64px 0;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 48px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-card {
+    padding: 28px;
+  }
+
+  .project-title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header {
+    padding: 48px 0;
+  }
+
+  .profile-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .skill-category {
+    padding: 24px;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .contact-link {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+}
