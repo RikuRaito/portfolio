@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>あなたの名前 - ポートフォリオ</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="container">
+        <div class="profile-section">
+          <div class="profile-image-wrapper">
+            <!-- ここに自分の写真のURLを入れてください -->
+            <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=400"
+                 alt="プロフィール写真"
+                 class="profile-image">
+          </div>
+          <div class="profile-text">
+            <h1 class="name">山田 太郎</h1>
+            <p class="title">フルスタックエンジニア</p>
+            <p class="description">
+              Webアプリケーション開発を中心に、フロントエンドからバックエンドまで幅広く対応できます。<br>
+              ユーザー体験を第一に考えた、美しく実用的なプロダクトを作ることが得意です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- スキル -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-items">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Tools</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 開発経験 -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+
+          <!-- プロジェクト 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">ECサイト構築プロジェクト</h3>
+              <span class="project-period">2024.01 - 2024.06</span>
+            </div>
+            <p class="project-description">
+              大手小売業者向けのECサイトを開発。React と Next.js を使用したフロントエンド、
+              Node.js と PostgreSQL によるバックエンドを担当。決済システムの統合も実施。
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <!-- プロジェクト 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">社内業務管理システム</h3>
+              <span class="project-period">2023.07 - 2023.12</span>
+            </div>
+            <p class="project-description">
+              中小企業向けの業務管理システムを開発。勤怠管理、プロジェクト管理、
+              ドキュメント共有などの機能を実装。Vue.js と Firebase を採用。
+            </p>
+            <div class="project-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </article>
+
+          <!-- プロジェクト 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">データ分析ダッシュボード</h3>
+              <span class="project-period">2023.03 - 2023.06</span>
+            </div>
+            <p class="project-description">
+              営業データを可視化するダッシュボードアプリケーションを開発。
+              Python と Pandas でデータ処理、React と Chart.js でフロントエンドを構築。
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">REST API</span>
+            </div>
+          </article>
+
+          <!-- プロジェクト 4 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">モバイルアプリ開発</h3>
+              <span class="project-period">2022.10 - 2023.02</span>
+            </div>
+            <p class="project-description">
+              健康管理アプリのフロントエンド開発を担当。React Native を使用し、
+              iOS と Android 両方に対応。バックエンドとの API 連携も実装。
+            </p>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">REST API</span>
+            </div>
+          </article>
+
+          <!-- プロジェクト 5 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">コーポレートサイトリニューアル</h3>
+              <span class="project-period">2022.05 - 2022.09</span>
+            </div>
+            <p class="project-description">
+              企業のコーポレートサイトを全面リニューアル。レスポンシブデザインを採用し、
+              SEO対策も実施。CMSとしてWordPressをカスタマイズして導入。
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">WordPress</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 連絡先 -->
+    <section class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact">
+          <a href="mailto:your.email@example.com" class="contact-link">
+            <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>your.email@example.com</span>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+            <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+            <span>github.com/yourusername</span>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" class="contact-link">
+            <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+            <span>@yourusername</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 山田 太郎. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
