@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <link rel="icon" type="image/png" href="/portfolio/favicon.png" />
@@ -7,18 +7,17 @@
     <title>斉藤吏功 - ポートフォリオ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  
+
   <body>
     <!-- ヘッダー -->
     <header class="header">
       <div class="container">
         <div class="profile-section">
-          
           <div class="profile-text">
             <h1 class="name fade-in-up delay-1">斉藤　吏功</h1>
             <p class="title fade-in-up delay-2">フルスタックエンジニア</p>
             <p class="description fade-in-up delay-3">
-              Webアプリケーション開発とネイティブアプリ開発を中心に、フロントエンドからバックエンドまで幅広く対応できます。<br>
+              Webアプリケーション開発とネイティブアプリ開発を中心に、フロントエンドからバックエンドまで幅広く対応できます。<br />
               ユーザー体験を第一に考えた、美しく実用的なプロダクトを作ることが得意です。
             </p>
           </div>
@@ -56,6 +55,7 @@
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Firebase</span>
               <span class="skill-tag">AWS(EC2)</span>
+              <span class="skill-tag">Kali Linux</span>
             </div>
           </div>
         </div>
@@ -67,7 +67,6 @@
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects">
-
           <!-- プロジェクト 1 -->
           <article class="project-card">
             <div class="project-header">
@@ -151,7 +150,38 @@
               <span class="tag">Flask</span>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Zenn記事 -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Zenn Articles</h2>
+        <div class="projects">
+          <!-- 記事 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">
+                Mac(Mシリーズ）でTryHackMeを快適に進めるためのCUI版Kali
+                Linux環境構築ガイド
+              </h3>
+              <span class="project-period">2025.11.21</span>
+            </div>
+            <p class="project-description">
+              セキュリティを勉強する上で必要不可欠なハッキング。これを実行するのに必要なKali
+              LinuxをMacで仮想環境を使わずに構築する方法をまとめました。
+            </p>
+            <a
+              href="https://zenn.dev/rikuraito/articles/f3e1919cdfda48"
+              target="_blank"
+              >記事を読む</a
+            >
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Kali Linux</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -163,25 +193,69 @@
         <div class="contact">
           <a href="mailto:sairikuneont@gmail.com" class="contact-link">
             <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
             </svg>
             <span>sairikuneont@gmail.com</span>
           </a>
-          <a href="https://github.com/RikuRaito" target="_blank" class="contact-link">
+          <a
+            href="https://github.com/RikuRaito"
+            target="_blank"
+            class="contact-link"
+          >
             <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+              />
             </svg>
             <span>github.com/RikuRaito</span>
           </a>
-          <a href="https://www.linkedin.com/in/riku-saito" target="_blank" class="contact-link">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
-              <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z
+          <a
+            href="https://www.linkedin.com/in/riku-saito"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="25"
+              height="25"
+              viewBox="0 0 30 30"
+            >
+              <path
+                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z
               M10.954,22h-2.95v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,
               1.72-1.719c0.948,0,1.719,0.771,1.719,1.719C11.168,10.38,10.397,11.151,9.449,11.151z
               M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04
-              c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+              c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z"
+              ></path>
             </svg>
             <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://zenn.dev/rikuraito"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              id="Zenn--Streamline-Simple-Icons"
+              height="24"
+              width="24"
+            >
+              <desc>Zenn Streamline Icon: https://streamlinehq.com</desc>
+              <title>Zenn</title>
+              <path
+                d="M0.264 23.771h4.984c0.264 0 0.498 -0.147 0.645 -0.352L19.614 0.874c0.176 -0.293 -0.029 -0.645 -0.381 -0.645h-4.72c-0.235 0 -0.44 0.117 -0.557 0.323L0.03 23.361c-0.088 0.176 0.029 0.41 0.234 0.41zm17.181 -0.352 6.479 -10.408c0.205 -0.323 -0.029 -0.733 -0.41 -0.733h-4.691c-0.176 0 -0.352 0.088 -0.44 0.235l-6.655 10.643c-0.176 0.264 0.029 0.616 0.352 0.616h4.779c0.234 -0.001 0.468 -0.118 0.586 -0.353z"
+                fill="#000000"
+                stroke-width="1"
+              ></path>
+            </svg>
+            <span>Zenn</span>
           </a>
         </div>
       </div>
@@ -194,24 +268,29 @@
       </div>
     </footer>
     <script>
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.15 });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
       // 各セクションにフェードアップを適用
-      document.querySelectorAll('.section, .project-card, .skill-category').forEach((el, i) => {
-        if (el.classList.contains('project-card')) {
-          // プロジェクトカードは交互にスライド方向を変える
-          el.classList.add(i % 2 === 0 ? 'scroll-left' : 'scroll-right');
-        } else {
-          el.classList.add('scroll-fade');
-        }
-        observer.observe(el);
-      });
+      document
+        .querySelectorAll(".section, .project-card, .skill-category")
+        .forEach((el, i) => {
+          if (el.classList.contains("project-card")) {
+            // プロジェクトカードは交互にスライド方向を変える
+            el.classList.add(i % 2 === 0 ? "scroll-left" : "scroll-right");
+          } else {
+            el.classList.add("scroll-fade");
+          }
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>
