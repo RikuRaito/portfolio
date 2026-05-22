@@ -529,6 +529,16 @@ body {
   50% { transform: translate(100px, 50px); }
 }
 
+.sub-project-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 24px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 3px solid var(--primary-color);
+}
+
 /*スクロールアニメーション*/
 .scroll-fade {
   opacity: 0;

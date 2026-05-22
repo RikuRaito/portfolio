@@ -34,6 +34,7 @@
             <h3 class="category-title">Frontend</h3>
             <div class="skill-items">
               <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
               <span class="skill-tag">Swift</span>
               <span class="skill-tag">React</span>
               <span class="skill-tag">TailwindCSS</span>
@@ -44,7 +45,9 @@
             <h3 class="category-title">Backend</h3>
             <div class="skill-items">
               <span class="skill-tag">Flask/Python</span>
+              <span class="skill-tag">Express.js</span>
               <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">REST API</span>
             </div>
           </div>
@@ -54,6 +57,8 @@
               <span class="skill-tag">Git</span>
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">Vercel</span>
               <span class="skill-tag">AWS(EC2)</span>
               <span class="skill-tag">Kali Linux</span>
             </div>
@@ -62,21 +67,94 @@
       </div>
     </section>
 
-    <!-- 開発経験 -->
+    <!-- 実務経験 -->
     <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">株式会社ソフィエイト - ソフトウェアエンジニア</h3>
+              <span class="project-period">2025.11 - 2026.04</span>
+            </div>
+            <p class="project-description">
+              Web開発における個人開発経験を経て、実務経験を積むために参画。実務レベルのコードベースで状態管理・アーキテクチャ設計・既存コードの改修など幅広い開発業務を担当した。
+            </p>
+
+            <h4 class="sub-project-title">① Next.jsを用いたPOSレジシステムの開発</h4>
+            <p class="project-description">
+              トレーディングカード買取・販売企業の店舗向けPOSレジシステムのフロントエンド開発を担当。カート内商品情報・決済ステータス・在庫連携など複数モジュール間で絡み合う複雑な状態を保守性高く実装し、プロジェクト推進に貢献した。
+            </p>
+            <div class="project-tags" style="margin-bottom: 24px;">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">OpenAPI</span>
+            </div>
+
+            <h4 class="sub-project-title">② React Nativeを用いたtoC向けネイティブアプリ開発</h4>
+            <p class="project-description">
+              コンシューマー向けカード情報管理・取引アプリの新規開発。フロントエンドからExpress.jsを用いたバックエンドとの連携までをフルスタックに担当。UIとビジネスロジックを明確に分離し、将来の機能拡張を見据えた保守性の高いコンポーネント設計を実践した。
+            </p>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Express.js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 開発経験 -->
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects">
+          <!-- プロジェクト 0 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">ECサイト フルスタック再開発</h3>
+              <span class="project-period">2026.05 -</span>
+            </div>
+            <p class="project-description">
+              運営者交代を機に、実務経験で培った知識・技術を用いてNext.js + Supabase + Vercelでのフルスタック再開発を実施。要件定義から担当し、toC向け画面に加え管理者用画面も実装。Middlewareを活用したPV数の自動取得をはじめ、さまざまな機能を管理画面に組み込んだ。
+            </p>
+            <a href="https://meltypuf.com" target="_blank">ページに飛ぶ</a>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Vercel</span>
+            </div>
+          </article>
+
           <!-- プロジェクト 1 -->
           <article class="project-card">
             <div class="project-header">
-              <h3 class="project-title">ヘルスケアアプリ開発プロジェクト</h3>
-              <span class="project-period">2025.10 -</span>
+              <h3 class="project-title">AYR - YouTube視聴管理アプリ</h3>
+              <span class="project-period">2026.01 - 2026.02</span>
             </div>
             <p class="project-description">
-              クライアントから依頼を受け、ネイティブアプリおよびWeb版を並行して開発。要件定義からデータベース設計まで一貫して担当。現在はテスト段階にあり、11月中旬のリリースを予定。
+              YouTubeの受動的な視聴習慣を改善するために開発したiOSアプリ。登録したチャンネルの最新動画をホーム画面に一覧表示し、チャンネルごとに直近50件の動画を確認できる。メール・Google・Appleアカウント認証に対応しApp Storeにリリース済み。現在はSupabaseの無料プランのプロジェクト数上限により開発を一時停止中。
             </p>
-            <a href="https://stepmii.com">ページに飛ぶ</a>
+            <a href="https://github.com/rikuraito/ayr" target="_blank">GitHubを見る</a>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </article>
+
+          <!-- プロジェクト 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">ヘルスケアアプリ開発プロジェクト</h3>
+              <span class="project-period">2025.10 - 2026.01</span>
+            </div>
+            <p class="project-description">
+              クライアントから依頼を受け、ネイティブアプリおよびWeb版を並行して開発。要件定義からデータベース設計まで一貫して担当(Appleのビジネスモデル審査基準に触れ、リリース要件の厳しさを知る)。
+            </p>
             <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">Swift</span>
